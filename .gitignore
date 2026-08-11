@@ -1,0 +1,12 @@
+# Ignore all files by default
+*
+
+# Allow directories
+!*/
+
+# Allow source code and documentation files
+!*.cpp
+!*.h
+!*.hpp
+!*.md
+!.gitignore
