@@ -6,6 +6,7 @@ class bank{
     string accountHolderName;
     string accountNumber;
     float balance;
+    
     bank(){
         cout<<"Enter account holder name : ";
         cin>>accountHolderName;
@@ -13,15 +14,23 @@ class bank{
         cin>>accountNumber;
         cout<<"Enter balance : ";
         cin>>balance;
+       
     }
 };  
+
 void display(bank b){
-    cout<<"Account Holder Name : "<<b.accountHolderName<<endl;
-    cout<<"Account Number : "<<b.accountNumber<<endl;
-    cout<<"Balance : "<<b.balance<<endl;
+    cout << b.accountHolderName << "\t" << b.accountNumber << "\t" << b.balance << endl;
 }
+
 int main(){
-    bank b1;
-    display(b1);
+    bank b[3];
+    
+    cout << "\nName\tAccount_No\tBalance\n";
+   
+    
+    for(int i=0; i<3; i++){
+        display(b[i]);
+    }
+    
     return 0;
 }
